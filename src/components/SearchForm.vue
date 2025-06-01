@@ -20,7 +20,7 @@
     </div>
     <div class="row row-height">
       <div class="col-md-12 col-height">
-        <a href="/document/labelfile.md" target="label_file_window">{{ labels.layoutfile_label }}</a>
+        <a href="document/labelfile.md" target="label_file_window">{{ labels.layoutfile_label }}</a>
       </div>
     </div>
     <div id="listpanel" class="table-responsive fa-list-panel">

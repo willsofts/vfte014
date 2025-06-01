@@ -34,7 +34,7 @@
 			{"name": "labelname_headerlabel", "value": "Label Name"},
 			{"name": "labelvalue_label", "value": "Value"},
 			{"name": "labelvalue_headerlabel", "value": "Value"},
-			{"name": "layoutfile_label", "value": "Import Layout File"},
+			{"name": "layoutfile_label", "value": "Import Layout File Template"},
 			{"name": "json_export_button", "value": "JSON"},
 			{"name": "excel_export_button", "value": "Excel"},
 			{"name": "json_upload_button", "value": "Upload JSON"},
