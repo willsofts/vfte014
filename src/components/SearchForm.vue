@@ -9,13 +9,13 @@
         </div>
         <div class="col-height col-md">
             <br/>
-            <button @click="searchClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-search fa-btn-icon" aria-hidden="true"></i>{{ labels.search_button }}</button>
-            <button @click="resetClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-refresh fa-btn-icon" aria-hidden="true"></i>{{ labels.reset_button }}</button>
-            <button @click="exportClick('json')" id="exportbuttonjson" class="btn btn-dark btn-sm btn-ctrl fa-btn-left" title="Export JSON"><i class="fa fa-file-code-o fa-btn-icon" aria-hidden="true"></i>{{ labels.json_export_button }}</button>
-						<button @click="exportClick('excel')" id="exportbuttonexcel" class="btn btn-dark btn-sm btn-ctrl fa-btn-left" title="Export Excel"><i class="fa fa-file-excel-o fa-btn-icon" aria-hidden="true"></i>{{ labels.excel_export_button }}</button>
-						<button @click="uploadClick('json')" id="uploadbuttonjson" class="btn btn-dark btn-sm btn-ctrl fa-btn-left btn-upload" title="Upload JSON"><i class="fa fa-upload fa-btn-icon" aria-hidden="true"></i>{{ labels.json_upload_button }}</button>
+            <button id="searchbutton" @click="searchClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-search fa-btn-icon" aria-hidden="true"></i>{{ labels.search_button }}</button>
+            <button id="resetbutton" @click="resetClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-refresh fa-btn-icon" aria-hidden="true"></i>{{ labels.reset_button }}</button>
+            <button @click="exportClick('json')" id="exportbuttonjson" class="btn btn-dark btn-sm btn-ctrl fa-btn-left btn-export" title="Export JSON"><i class="fa fa-file-code-o fa-btn-icon" aria-hidden="true"></i>{{ labels.json_export_button }}</button>
+            <button @click="exportClick('excel')" id="exportbuttonexcel" class="btn btn-dark btn-sm btn-ctrl fa-btn-left btn-export" title="Export Excel"><i class="fa fa-file-excel-o fa-btn-icon" aria-hidden="true"></i>{{ labels.excel_export_button }}</button>
+            <button @click="uploadClick('json')" id="uploadbuttonjson" class="btn btn-dark btn-sm btn-ctrl fa-btn-left btn-upload" title="Upload JSON"><i class="fa fa-upload fa-btn-icon" aria-hidden="true"></i>{{ labels.json_upload_button }}</button>
             <button @click="uploadClick('excel')" id="uploadbuttonexcel" class="btn btn-dark btn-sm btn-ctrl fa-btn-left btn-upload" title="Upload Excel"><i class="fa fa-upload fa-btn-icon" aria-hidden="true"></i>{{ labels.excel_upload_button }}</button>
-            <button @click="insertClick" class="btn btn-dark btn-sm btn-ctrl pull-right"><i class="fa fa-plus fa-btn-icon" aria-hidden="true"></i>{{ labels.insert_button }}</button>
+            <button id="insertbutton" @click="insertClick" class="btn btn-dark btn-sm btn-ctrl pull-right"><i class="fa fa-plus fa-btn-icon" aria-hidden="true"></i>{{ labels.insert_button }}</button>
         </div>
     </div>
     <div class="row row-height">
@@ -31,6 +31,7 @@
 </template>
 <style>
 button.btn-upload { min-width: 130px; }
+button.btn-export { min-width: 90px; }
 </style>
 <script>
 import { ref } from 'vue';
